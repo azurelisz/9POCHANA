@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+#lato-logo{
+    position: relative;
+    margin: 0;
+}
+svg {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    min-width: 20vw;
+    height: auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 3px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 6.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #FFF;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+    stroke: #FFF;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+    stroke: #FFF;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+    stroke: #FFF;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+    stroke: #FFF;
+    animation-delay: -5s;
+}
+.text-copy:nth-child(6){
+    stroke: #FFF;
+    animation-delay: -6s;
+}
+@keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+}

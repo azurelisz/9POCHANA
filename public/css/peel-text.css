@@ -1,0 +1,125 @@
+
+.menu{
+  padding: 3vw;
+  font-size: 3vw;
+  text-align: center;
+  /*background-color: rgba(255,255, 255,0.0);*/
+}
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.menu p {
+  padding: 0;
+  background-color: rgba(32, 32, 32, 0.8);
+  font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+.contact-head{
+  padding: 3vw;
+  font-size: 3vw;
+  text-align: center;
+  /*background-color: rgba(255,255, 255,0.0);*/
+}
+.team{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.contact-head p{
+  border: 5px solid #ffff33;
+  color: #424242;
+  font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+p span {
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500;
+          perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+p span::before,
+p span::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+p span::before {
+  z-index: 1;
+  color: rgba(0,0,0,0.2);
+  -webkit-transform: scale(1.1, 1) skew(0deg, 20deg);
+          transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+p span::after {
+  z-index: 2;
+  color: rgb(250, 250, 250);
+  text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0,0,0,0.8);
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+}
+.contact-head p span::after {
+  z-index: 2;
+  color: #ffff33;
+  text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0,0,0,0.8);
+  -webkit-transform: rotateY(-40deg);
+  transform: rotateY(-40deg);
+}
+p span:hover::before {
+  -webkit-transform: scale(1.1, 1) skew(0deg, 5deg);
+          transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+p span:hover::after {
+  -webkit-transform: rotateY(-10deg);
+          transform: rotateY(-10deg);
+}
+/*p span + span {
+  margin-left: 0.3em;
+}*/
+@media (min-width: 20em) {
+  p {
+    font-size: 2em;
+  }
+  p span::before,
+  p span::after {
+    display: block;
+  }
+}
+@media (min-width: 30em) {
+  p {
+    font-size: 3em;
+  }
+}
+@media (min-width: 40em) {
+  p {
+    font-size: 5em;
+  }
+}
+@media (min-width: 60em) {
+  p {
+    font-size: 8em;
+  }
+}
