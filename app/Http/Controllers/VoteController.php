@@ -49,7 +49,7 @@ class VoteController extends Controller
         $vote->vote8 = $vote8;
         $vote->vote9 = $vote9;
         $vote->vote10 = $vote10;
-        $vote->vote11= $vote11;
+        $vote->vote11 = $vote11;
         $vote->vote12 = $vote12;
         $vote->vote13 = $vote13;
         $vote->vote14 = $vote14;
